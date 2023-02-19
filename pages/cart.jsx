@@ -22,7 +22,7 @@ const  Cart=()=> {
     const router = useRouter();
 
     const createOrder = async (data) => {
-        fetch("http://localhost:3000/api/orders", {
+        fetch("https://deployed-project.vercel.app/api/orders", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
